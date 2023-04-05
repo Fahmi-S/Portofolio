@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(205, 205, 205);
+}
+
+.navbar{
+    display: flex;
+    background-color: white;
+    padding: 10px;
+}
+
+
+.navbar a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.navbar a:not(:nth-child(1)){
+    margin-top: 10px;
+}
+
+.navbar a:nth-child(1){
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Rubik Pixels', cursive;
+}
+
+.header{
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0px 0px 200px 0px;
+}
+
+.judul,
+.icon{
+    width: 40em;
+    margin-left: 3em;
+}
+
+.judul :nth-child(1){
+    margin-top: 3em;
+    max-width: 14em;
+    margin-bottom: 0;
+}
+
+.judul :nth-child(2){
+    max-width: 39em;
+    margin-top: 0;
+}
+
+.judul :nth-child(3){
+    text-transform: uppercase;
+    max-width: 10em;
+    margin-top: 0;
+}
+
+
+.judul-about{
+    max-width: 48em;
+}
+
+.icon{
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon img{
+    width: 3vw;
+    height: 6vh;
+}
+
+
+.project{
+    height: 25em;
+    margin: 5em;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70em;
+}
+
+.img-display{
+    width: 40em;
+    height: 20em;
+    border-radius: 10px;
+    margin-right: 0;
+}
+
+.img-display img{
+    width: 40em;
+    height: 20em;
+    border-radius: 10px;
+}
+
+.project-judul{
+    max-width: 20em;
+}
+
+.project-judul h1{
+    margin-bottom: 0;
+}
+
+.project-author{
+    display: flex;
+    max-width: 20em;
+}
+
+.project-author h5{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.project-author :not(:nth-child(1)){
+    color: rgb(200, 200, 200);
+    margin-left: 35px;
+}
+
+.project-desk{
+    max-width: 60em;
+}
+
+.project-desk h5{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.project-package{
+    display: flex;
+    width: 30em;
+}
+
+.project-package :not(:nth-child(1)){
+    margin-left: 10px;
+}
+
+.project-package h5{
+    padding: 10px;
+    color: rgb(0, 245, 255);
+    background-color: rgb(193, 253, 255);
+}
+
+.button{
+    width: 7em;
+}
+
+button{
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    color: rgb(128, 211, 245);
+    border: 1px solid rgb(128, 211, 245);
+    border-radius: 10px;
+    width: 8em;
+    height: 4em;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(128, 211, 245);
+    color: white;
+}
+
+.about-me{
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 200px 0px 0px 0px;
+}
+
+.judul-about{
+    margin-top: 2em;
+}
+
+.judul-about,
+.icon-about{
+    width: 40em;
+    margin-left: 6em;
+}
+
+.judul-about :nth-child(1){
+    margin-top: 3em;
+    max-width: 14em;
+    margin-bottom: 0;
+}
+
+.judul-about :nth-child(2){
+    max-width: 39em;
+    margin-top: 0;
+}
+
+.judul-about :nth-child(3){
+    text-transform: uppercase;
+    max-width: 10em;
+    margin-top: 0;
+}
+
+
+.judul-about{
+    max-width: 48em;
+}
+
+.icon-about{
+    width: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-about img{
+    width: 3vw;
+    height: 6vh;
+}
+
+.contact-me{
+    border-radius: 0px 200px 0px 0px;
+    margin-top: 4em;
+    background-color: white;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 250, 255);
+}
+
+.judul-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40em;
+    text-align: center;
+}
+
+.judul-contact :nth-child(1){
+    max-width: 10em;
+}
+
+.judul-contact :nth-child(2){
+    max-width: 30em;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+}
+
+.form-contact :not(:nth-child(1)){
+    margin-top: 2em;
+}
+
+input{
+    height: 3em;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    height: 3em;
+    margin-top: 1em;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px 200px 0px 0px;
+}
