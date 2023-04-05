@@ -77,7 +77,6 @@ nav{
     margin-top: 0;
 }
 
-
 .judul-about{
     max-width: 48em;
 }
@@ -101,7 +100,6 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-
 
 .project-img{
     display: flex;
@@ -226,7 +224,6 @@ button:hover{
     margin-top: 0;
 }
 
-
 .judul-about{
     max-width: 48em;
 }
@@ -347,10 +344,15 @@ textarea{
         text-align: left;
         position: relative;
     }
+
+
+    .judul{
+        width: 10px;
+    }
     
     .judul,
     .icon{
-        width: 40em;
+        width: 20em;
         margin-left: 1em;
     }
 
@@ -438,13 +440,22 @@ textarea{
         padding-left: 20px;
     }
 
+    .about-me{
+        height: 30em;
+    }
+
     .judul-about,
     .icon-about{
+        width: 20em;
         margin-left: 3em;
     }
-    
+
+    .judul-about{
+        max-width: 18em;
+    }
+
     .judul-about :nth-child(2){
-        max-width: 20em;
+        max-width: 15em;
     }
     
     .icon-about{
