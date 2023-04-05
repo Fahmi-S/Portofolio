@@ -9,18 +9,30 @@ body{
     background-color: rgb(205, 205, 205);
 }
 
-.navbar{
-    display: flex;
+nav{
     background-color: white;
-    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
 
 .navbar a{
     margin-right: 30px;
     text-decoration: none;
     color: black;
     font-size: 15px;
+}
+
+
+.ham{
+    display: none;
 }
 
 .navbar a:not(:nth-child(1)){
@@ -77,10 +89,9 @@ body{
 }
 
 .icon img{
-    width: 3vw;
-    height: 6vh;
+    max-width: 3vw;
+    max-height: 6vh;
 }
-
 
 .project{
     height: 25em;
@@ -227,8 +238,8 @@ button:hover{
 }
 
 .icon-about img{
-    width: 3vw;
-    height: 6vh;
+    max-width: 3vw;
+    max-height: 6vh;
 }
 
 .contact-me{
@@ -289,4 +300,174 @@ textarea{
     justify-content: center;
     align-items: center;
     border-radius: 200px 200px 0px 0px;
+}
+
+@media only screen and (max-width:374px){
+    .navbar a:not(:nth-child(1)){
+        display: none;
+    }
+    
+    .navbar{
+        padding-top: 0;
+        align-items: normal;
+        justify-content: space-around;
+    }
+
+    .navbar a{
+        padding: 30px;
+    }
+
+    .navbar a:nth-child(6){
+        display: block;
+        text-align: center;
+        width: 15vh;
+        margin-right: 0;
+    }
+
+    .navbar a:nth-child(1){
+        margin-right: auto;
+        font-size: 20px;
+    }
+
+    .navbar.responsive{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > .navbar.responsive > .ham{
+        position: absolute;
+        text-align: center;
+        top: 0;
+        right: 0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+        position: relative;
+    }
+    
+    .judul,
+    .icon{
+        width: 40em;
+        margin-left: 1em;
+    }
+
+    .judul :nth-child(1){
+        margin-top: 2em;
+    }
+    
+    .judul :nth-child(2){
+        max-width: 18em;
+        margin-top: 0;
+    }
+    
+    .judul :nth-child(3){
+        text-transform: uppercase;
+        max-width: 10em;
+        margin-top: 0;
+    }
+    
+    .icon{
+        width: 10em;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .icon img{
+        max-width: 10vw;
+        max-height: 10vh;
+    }
+
+    .project{
+        height: 40em;
+        display: flex;
+        margin: 2em;
+        justify-content: normal;
+        flex-direction: column;
+        border: 1px solid gray;
+    }
+    
+    .project-img{
+        display: flex;
+        padding: 20px;
+        width: 16em;
+    }
+    
+    .img-display{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10em;
+    }
+    
+    .img-display img{
+        width: 14em;
+        height: 10em;
+    }
+    
+    .project-judul{
+        padding-left: 20px;
+        font-size: 10px;
+    }
+    
+    .project-judul h1{
+        margin-bottom: 0;
+    }
+    
+    .project-author{
+        padding-left: 20px;
+    }
+    
+    .project-desk{
+        padding-left: 20px;
+    }
+
+    .project-package{
+        flex-wrap: wrap;
+        width: 15em;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .project-package :nth-child(4){
+        margin-left: 0;
+    }
+
+    .button{
+        padding-left: 20px;
+    }
+
+    .judul-about,
+    .icon-about{
+        margin-left: 3em;
+    }
+    
+    .judul-about :nth-child(2){
+        max-width: 20em;
+    }
+    
+    .icon-about{
+        width: 10em;
+        justify-content: space-between;
+    }
+    
+    .icon-about img{
+        max-width: 10vw;
+        max-height: 10vh;
+    }
+
+    .contact-me{
+        height: 45em;
+    }
+        
+    .judul-contact :nth-child(2){
+        max-width: 18em;
+    }
+    
+    .form-contact{
+        width: 18em;
+    }
+
+
 }
