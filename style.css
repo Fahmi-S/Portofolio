@@ -271,6 +271,7 @@ button:hover{
 }
 
 input{
+    border: none;
     height: 3em;
     border-radius: 5px;
 }
